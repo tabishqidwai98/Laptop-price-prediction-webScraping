@@ -148,7 +148,7 @@ def save_data(data, filename):
   df.to_csv(filename, header=True, index=False)
 
 
-if __name__ == '__main__':
+if __name__ == '__main__': # forget the dataset
     data = collect_all()
     filename = f'laptop_{time.strftime("_%Y%m%d_%H%M")}.csv'
     save_data(data, filename)
